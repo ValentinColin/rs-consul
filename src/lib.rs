@@ -241,6 +241,7 @@ fn https_connector() -> hyper_rustls::HttpsConnector<HttpConnector> {
     // Clippy doesn't realize if the feature is disabled, this code would execute.
     hyper_rustls::HttpsConnectorBuilder::new()
         .with_native_roots()
+        .unwrap() // FIXME: treat the case properly
         .https_or_http()
         .enable_http1()
         .build()

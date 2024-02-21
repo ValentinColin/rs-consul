@@ -22,7 +22,7 @@ base64 = "0.21"
 futures = "0.3"
 http = "0.2"
 hyper = { version = "0.14", features = ["full"] }
-hyper-rustls = { version = "0.24" }
+hyper-rustls = "0.25"
 lazy_static = { version = "1", optional = true }
 opentelemetry = { version = "0.21", optional = true }
 prometheus = { version = "0.13", optional = true }
